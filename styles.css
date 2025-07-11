@@ -648,7 +648,7 @@ section:not(.hero) {
     
     .hero {
         min-height: 100vh;
-        padding: 80px 0 2rem 0; /* Add top padding for navbar */
+        padding: 6rem 0 2rem 0; /* Add top padding for navbar */
     }
     
     .hero-content {
@@ -732,7 +732,7 @@ section:not(.hero) {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 70px 0 1rem 0; /* Even more top padding for small screens */
+        padding: 6rem 0 1rem 0; /* Even more top padding for small screens */
     }
     
     .hero-content {
@@ -783,7 +783,7 @@ section:not(.hero) {
 /* Extra small screens (phones in portrait) */
 @media (max-width: 360px) {
     .hero {
-        padding: 60px 0 1rem 0;
+        padding: 6rem 0 1rem 0;
     }
     
     .hero-content {
