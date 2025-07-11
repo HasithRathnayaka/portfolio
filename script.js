@@ -2,8 +2,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const profileImg = document.querySelector('.profile-img');
     if (profileImg) {
-        // Ensure the animation plays on page load
-        profileImg.style.animation = 'profilePopup 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s both';
+        // Reset animation to ensure it plays every time
+        profileImg.style.animation = 'none';
+        profileImg.offsetHeight; // Trigger reflow
+        profileImg.style.animation = 'profilePopup 2s cubic-bezier(0.44, 0.11, 0.52, 0.96) 0.2s infinite normal both running';
+        profileImg.style.animationIterateCount = 'infinite';
+        
+        // Add a subtle hover effect
+        profileImg.addEventListener('mouseenter', () => {
+            profileImg.style.transform = 'scale(1.05)';
+            profileImg.style.transition = 'transform 0.3s ease';
+        });
+        
+        profileImg.addEventListener('mouseleave', () => {
+            profileImg.style.transform = 'scale(1)';
+        });
     }
 });
 
@@ -320,43 +333,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (footer) {
         const currentYear = new Date().getFullYear();
         footer.innerHTML = footer.innerHTML.replace('2025', currentYear);
-    }
-});
-
-// Profile Image Lightbox functionality
-document.addEventListener('DOMContentLoaded', () => {
-    // Add lightbox functionality
-    const profileImg = document.querySelector('.profile-img img');
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const caption = document.getElementById('caption');
-    const closeBtn = document.querySelector('.close');
-
-    if (profileImg && modal) {
-        // Add click event to profile image
-        profileImg.addEventListener('click', () => {
-            modal.style.display = 'block';
-            modalImg.src = profileImg.src;
-            modalImg.alt = profileImg.alt;
-        });
-
-        // Close modal when clicking the X
-        closeBtn.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-
-        // Close modal when clicking outside the image
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal.style.display === 'block') {
-                modal.style.display = 'none';
-            }
-        });
     }
 });
