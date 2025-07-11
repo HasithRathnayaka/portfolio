@@ -195,6 +195,7 @@ body {
 .btn-primary {
     justify-content: center;
     display: flex;
+    margin: 0 auto;
     background: linear-gradient(135deg, var(--accent-color), #ff9a9e);
     color: white;
     box-shadow: var(--shadow);
