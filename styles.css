@@ -349,7 +349,7 @@ section:not(.hero) {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 1200px;
+    width: 75vw;
     margin: 0 auto;
     padding: 0 2rem;
     gap: 3rem;
@@ -652,10 +652,12 @@ section:not(.hero) {
     }
     
     .hero-content {
-        grid-template-columns: 1fr;
+        display: flex;
+        padding: 0px 2rem;
+        flex-direction: column-reverse;
+        /* grid-template-columns: 1fr; */
         text-align: center;
         gap: 2rem;
-        padding: 0 1rem; /* Reduce side padding */
     }
     
     .hero-title {
@@ -686,6 +688,7 @@ section:not(.hero) {
         text-align: center;
         gap: 2rem;
         padding: 0 1rem;
+        justify-content: center;
     }
     
     .about-text {
@@ -733,7 +736,9 @@ section:not(.hero) {
     }
     
     .hero-content {
-        padding: 0 0.5rem; /* Even less side padding */
+        display: flex;
+        padding: 0px 2rem;
+        flex-direction: column-reverse;
     }
     
     .hero-title {
@@ -782,7 +787,9 @@ section:not(.hero) {
     }
     
     .hero-content {
-        padding: 0 0.25rem;
+        display: flex;
+        padding: 0px 2rem;
+        flex-direction: column-reverse;
     }
     
     .hero-title {
