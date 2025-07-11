@@ -225,8 +225,8 @@ body {
 }
 
 .profile-img {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     background: linear-gradient(135deg, var(--accent-color), #ff9a9e);
     border-radius: 50%;
     display: flex;
@@ -680,8 +680,8 @@ section:not(.hero) {
     }
     
     .profile-img {
-        width: 250px !important;
-        height: 250px !important;
+        width: 320px !important;
+        height: 320px !important;
     }
     
     .about-content {
@@ -747,8 +747,8 @@ section:not(.hero) {
     }
     
     .profile-img {
-        width: 200px !important;
-        height: 200px !important;
+        width: 260px !important;
+        height: 260px !important;
     }
     
     .section-title {
@@ -793,8 +793,8 @@ section:not(.hero) {
     }
     
     .profile-img {
-        width: 180px !important;
-        height: 180px !important;
+        width: 220px !important;
+        height: 220px !important;
     }
     
     .btn {
