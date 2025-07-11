@@ -352,7 +352,6 @@ section:not(.hero) {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-    text-align: center;
 }
 
 .about-text {
@@ -373,8 +372,8 @@ section:not(.hero) {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     max-width: 400px;
-    margin: 0 auto;
-    justify-content: center;
+    margin: 2rem auto 0 auto;
+    justify-items: center;
 }
 
 .stat {
@@ -694,15 +693,20 @@ section:not(.hero) {
         gap: 2rem;
     }
     
+    .about-text {
+        text-align: center;
+    }
+    
     .about-text p {
         text-align: center;
         font-size: 1rem;
     }
     
     .about-stats {
-        grid-template-columns: 1fr;
-        max-width: 300px;
-        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 350px;
+        margin: 2rem auto 0 auto;
+        justify-items: center;
     }
     
     .contact-content {
@@ -755,6 +759,12 @@ section:not(.hero) {
         height: 250px !important;
     }
     
+    .about-stats {
+        grid-template-columns: 1fr;
+        max-width: 250px;
+        margin: 1.5rem auto 0 auto;
+    }
+    
     .section-title {
         font-size: 2rem;
     }
@@ -799,6 +809,12 @@ section:not(.hero) {
     .profile-img {
         width: 220px !important;
         height: 220px !important;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+        max-width: 200px;
+        margin: 1rem auto 0 auto;
     }
     
     .btn {
