@@ -471,6 +471,23 @@ section:not(.hero) {
     box-shadow: var(--shadow);
 }
 
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.project-card-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card-link .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
 .project-image {
     height: 200px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
