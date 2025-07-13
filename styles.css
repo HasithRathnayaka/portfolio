@@ -475,7 +475,6 @@ section:not(.hero) {
     text-decoration: none;
     color: inherit;
     display: block;
-    cursor: pointer;
 }
 
 .project-card-link:hover {
@@ -483,7 +482,11 @@ section:not(.hero) {
     color: inherit;
 }
 
-.project-card-link .project-card:hover {
+.project-card-link .project-card {
+    transition: var(--transition);
+}
+
+.project-card-link:hover .project-card {
     transform: translateY(-5px);
     box-shadow: var(--shadow);
 }
