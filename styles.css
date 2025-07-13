@@ -193,9 +193,6 @@ body {
 }
 
 .btn-primary {
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
     background: linear-gradient(135deg, var(--accent-color), #ff9a9e);
     color: white;
     box-shadow: var(--shadow);
@@ -325,7 +322,7 @@ section {
 
 section:not(.hero) {
     max-width: 100%;
-    margin: 60 auto;
+    margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -352,7 +349,7 @@ section:not(.hero) {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 75vw;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     gap: 3rem;
@@ -651,16 +648,14 @@ section:not(.hero) {
     
     .hero {
         min-height: 100vh;
-        padding: 6rem 0 2rem 0; /* Add top padding for navbar */
+        padding: 80px 0 2rem 0; /* Add top padding for navbar */
     }
     
     .hero-content {
-        display: flex;
-        padding: 0px 2rem;
-        flex-direction: column-reverse;
-        /* grid-template-columns: 1fr; */
+        grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+        padding: 0 1rem; /* Reduce side padding */
     }
     
     .hero-title {
@@ -691,7 +686,6 @@ section:not(.hero) {
         text-align: center;
         gap: 2rem;
         padding: 0 1rem;
-        justify-content: center;
     }
     
     .about-text {
@@ -735,13 +729,11 @@ section:not(.hero) {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 6rem 0 1rem 0; /* Even more top padding for small screens */
+        padding: 70px 0 1rem 0; /* Even more top padding for small screens */
     }
     
     .hero-content {
-        display: flex;
-        padding: 0px 2rem;
-        flex-direction: column-reverse;
+        padding: 0 0.5rem; /* Even less side padding */
     }
     
     .hero-title {
@@ -786,13 +778,11 @@ section:not(.hero) {
 /* Extra small screens (phones in portrait) */
 @media (max-width: 360px) {
     .hero {
-        padding: 6rem 0 1rem 0;
+        padding: 60px 0 1rem 0;
     }
     
     .hero-content {
-        display: flex;
-        padding: 0px 2rem;
-        flex-direction: column-reverse;
+        padding: 0 0.25rem;
     }
     
     .hero-title {
